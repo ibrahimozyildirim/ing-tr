@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English-Turkish Dictionary</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="theme-blue">
+    <header>
+        <h1>English-Turkish Dictionary</h1>
+        <div class="nav-buttons">
+            <button id="mainPageBtn" class="active">Main Page</button>
+            <button id="knownWordsBtn">Known Words</button>
+        </div>
+    </header>
+
+    <main>
+        <div id="mainPage" class="page active">
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search for a word...">
+                <button id="clearSearch"><i class="fas fa-times"></i></button>
+            </div>
+            <div id="wordContainer" class="word-container"></div>
+        </div>
+
+        <div id="knownWordsPage" class="page">
+            <div class="search-container">
+                <input type="text" id="knownSearchInput" placeholder="Search in known words...">
+                <button id="clearKnownSearch"><i class="fas fa-times"></i></button>
+            </div>
+            <div id="knownWordContainer" class="word-container"></div>
+        </div>
+    </main>
+
+    <div class="theme-toggle">
+        <button id="blueTheme" class="theme-btn active" title="Blue Theme">
+            <i class="fas fa-circle" style="color: #3498db;"></i>
+        </button>
+        <button id="greenTheme" class="theme-btn" title="Green Theme">
+            <i class="fas fa-circle" style="color: #2ecc71;"></i>
+        </button>
+        <button id="whiteTheme" class="theme-btn" title="White Theme">
+            <i class="fas fa-circle" style="color: #ecf0f1;"></i>
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
